@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp3.Registry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Twoja aplikacja" Height="550" Width="400" FontSize="25" Background="Gray">
+
+    <Window.Resources>
+        <ControlTemplate x:Key="ValidationErrorTemplate">
+        </ControlTemplate>
+
+    </Window.Resources>
+
+    <Grid>
+        
+        <StackPanel>
+            <Label Content="Rejestracja" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator>
+            </Separator>
+            <Label Content="Login" Foreground="White"/>
+            <TextBox Name="txtUsername" Validation.ErrorTemplate="{StaticResource ValidationErrorTemplate}" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Hasło" Foreground="White"/>
+            <PasswordBox Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Label Content="Imie" Foreground="White"/>
+            <TextBox Name="txtImie" Background="#545d6a" Foreground="White" FontSize="18" Height="33" />
+            <Label Content="Telefon" Foreground="White"/>
+            <TextBox Name="intTelefon" PreviewTextInput="TextBox_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" TextChanged="TextBox_TextChanged" Background="#545d6a" Foreground="White" FontSize="18" Height="35"/>
+            
+
+            <Button x:Name="RegistrationButton" Width="350px" Content="Zarejestruj się" Height="43" Click="RegistrationButton_Click" Margin="00,20,0,0"/>
+            <Button x:Name="Back" Width="350px" Content="Powrót" Height="51" Click="Back_Click" Margin="0,7,0,0"/>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
+    
+    
