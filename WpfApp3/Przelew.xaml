@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp3.Przelew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Przelew" Height="550" Width="500" FontSize="14" Background="Gray">
+    <Grid>
+        <Label Content="Odbiorca" Foreground="White" FontSize="15" Margin="6,16,4,456"/>
+        <TextBox Name="txtOdbiorca" PreviewTextInput="TextBox_PreviewTextInputText" PreviewKeyDown="TextBox_PreviewKeyDownText" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,53,0,432"/>
+        <Label Content="Numer konta odbiorcy" Foreground="White" FontSize="15" Margin="5,104,5,380"/>
+        <TextBox Name="txtNumerKonta"  PreviewTextInput="TextBox_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,144,0,333"/>
+        <Label Content="Tytuł przelewu" Foreground="White" FontSize="15" Margin="5,204,5,276"/>
+        <TextBox Name="txtTytul" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,244,0,237"/>
+        <Label Content="Kwota przelewu (PLN)" Foreground="White" FontSize="15" Margin="5,306,5,168"/>
+        <TextBox Name="txtKwota" PreviewTextInput="TextBox_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" TextChanged="TextBox_TextChanged" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,341,0,144"/>
+        <Button Content="Wyślij" Click="Wyslij_Click" FontSize="20" Margin="144,396,143,80"/>
+        <Button x:Name="Start" Content="Start" FontSize="20" Click="Start_Click" Margin="144,462,143,6"/>
+    </Grid>
+</Window>

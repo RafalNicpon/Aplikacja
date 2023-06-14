@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp3.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+       Title="Ustawienia" Height="550" Width="400" FontSize="14" Background="Gray">
+    <Grid Margin="80,0,-80,0">
+        <Button x:Name="ZmianaHasla" Content="Zmiana hasla" FontSize="20" Click="Zmiana_Click" Margin="-48,32,96,438"/>
+        <Button x:Name="ZmianaTel" Content="Zmiana numeru telefonu" FontSize="20" Click="Telefon_Click" Margin="-48,106,96,364"/>
+        <Button x:Name="ZamknijKonto" Content="ZamknijKonto" FontSize="20" Click="Start_Click" Margin="-50,242,98,228"/>
+        <Button x:Name="Wyloguj" Content="Wyloguj się" FontSize="20" Click="Logout_Click" Margin="-50,308,98,162"/>
+        <Button x:Name="Start" Content="Start" FontSize="20" Click="Start_Click" Margin="-48,442,335,34"/>
+        <Button x:Name="Cofnij" Content="Cofnij" FontSize="20" Click="Cofnij_Click" Margin="188,444,99,32"/>
+    </Grid>
+</Window>
