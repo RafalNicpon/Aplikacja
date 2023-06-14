@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp3.Contact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Kontakt" Height="550" Width="400" FontSize="14" Background="Gray">
+    <Grid>
+        <Grid>
+            <Label Content="Zostaw nam swoje dane, a skontaktujemy się z Tobą!" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,-2,0,2"/>
+            <Label Content="Imię" Foreground="White" FontSize="20" Margin="8,62,2,410"/>
+            <TextBox Name="txtOdbiorca" PreviewTextInput="TextBox_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,105,0,380"/>
+            <Label Content="Numer telefonu" Foreground="White" FontSize="20" Margin="1,156,9,311"/>
+            <TextBox Name="txtNumerKonta"  PreviewTextInput="TextBox_PreviewTextInputText" PreviewKeyDown="TextBox_PreviewKeyDownText" TextChanged="TextBox_TextChanged" Background="#545d6a" Foreground="White" FontSize="18" Margin="0,204,0,273"/>
+        </Grid>
+        
+        <Button x:Name="Start" Content="Start" FontSize="20" Click="Start_Click" Margin="58,444,229,32"/>
+        <Button x:Name="Cofnij" Content="Cofnij" FontSize="20" Click="Cofnij_Click" Margin="224,444,63,32"/>
+        <Button Content="Wyślij" Click="Wyslij_Click" FontSize="20" Margin="115,354,120,122"/>
+    </Grid>
+</Window>

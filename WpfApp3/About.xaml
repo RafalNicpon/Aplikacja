@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApp3.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+         Title="O aplikacji" Height="550" Width="400" FontSize="14" Background="Gray">
+    <Grid>
+        <Button x:Name="Start" Content="Start" FontSize="20" Click="Start_Click" Margin="58,444,229,32"/>
+        <Button x:Name="Cofnij" Content="Cofnij" FontSize="20" Click="Cofnij_Click" Margin="224,444,63,32"/>
+    </Grid>
+</Window>
